@@ -356,7 +356,7 @@ function Chat({ user, onLogout }) {
   async function uploadFile(event) {
     const file = event.target.files?.[0]; event.target.value = "";
     if (!file || !active) return;
-    if (file.size > 100 * 1024 * 1024) return setToast({ name: "File is too large", text: "Choose a file up to 100 MB." });
+    if (file.size > 5 * 1024 * 1024 * 1024) return setToast({ name: "File is too large", text: "Choose a file up to 5 GB." });
     try {
       setUploading(true);
       const body = new FormData(); body.append("file", file);
@@ -545,7 +545,7 @@ function Chat({ user, onLogout }) {
             </div>
             <form className="composer" onSubmit={send}>
               <input ref={fileInput} className="file-input" type="file" onChange={uploadFile} />
-              <button type="button" className="icon-button" disabled={uploading} title="Attach a file up to 100 MB" onClick={() => fileInput.current?.click()}><Paperclip /></button>
+              <button type="button" className="icon-button" disabled={uploading} title="Attach a file up to 5 GB" onClick={() => fileInput.current?.click()}><Paperclip /></button>
               <button type="button" className={`icon-button ${showEmoji ? "selected" : ""}`} title="Choose emoji" onClick={() => setShowEmoji(!showEmoji)}>
                 <Smile />
               </button>

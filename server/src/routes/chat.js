@@ -14,7 +14,7 @@ let newsCache = { expires: 0, items: [] };
 const decodeXml = value => value.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>');
 const upload = multer({
   dest: 'uploads/',
-  limits: { fileSize: 100 * 1024 * 1024 },
+  limits: { fileSize: 5 * 1024 * 1024 * 1024 },
   storage: multer.diskStorage({
     destination: 'uploads/',
     filename: (_req, file, callback) => callback(null, `${Date.now()}-${crypto.randomBytes(8).toString('hex')}${path.extname(file.originalname).slice(0, 10)}`)

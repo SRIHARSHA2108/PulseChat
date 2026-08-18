@@ -39,7 +39,7 @@ PulseChat brings messaging, focused work, file sharing, lightweight planning, li
 
 ### Files, calls, and productivity
 
-- Authenticated attachment uploads up to **100 MB**
+- Authenticated attachment uploads up to **5 GB**
 - Downloadable file cards with filename and size
 - Device calling through a saved international phone number
 - Assignable task messages that can be marked complete
