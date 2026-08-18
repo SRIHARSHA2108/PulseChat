@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="10" y1="112" x2="118" y2="12" gradientUnits="userSpaceOnUse"><stop stop-color="#7c24f4"/><stop offset=".52" stop-color="#514cec"/><stop offset="1" stop-color="#31d8ef"/></linearGradient>
+    <linearGradient id="pulse" x1="26" y1="64" x2="100" y2="64" gradientUnits="userSpaceOnUse"><stop stop-color="#6644ec"/><stop offset="1" stop-color="#317bea"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="145%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#5238d9" flood-opacity=".28"/></filter>
+  </defs>
+  <rect x="7" y="7" width="114" height="114" rx="32" fill="url(#bg)" filter="url(#shadow)"/>
+  <path d="M32 33h39c17 0 28 11 28 27 0 17-11 27-28 27H52L35 101V60h37c6 0 10-4 10-10 0-5-4-9-10-9H49v19H32V33Z" fill="#fff"/>
+  <path d="M24 63h28l4-11 7 25 8-31 8 29 5-12h20" fill="none" stroke="url(#pulse)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 25c14-18 42-20 57-15" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="8" stroke-linecap="round"/>
+</svg>
