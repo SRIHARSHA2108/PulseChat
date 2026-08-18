@@ -110,6 +110,15 @@ JWT_SECRET=replace-with-a-long-random-secret
 CLIENT_URL=http://localhost:5173
 ```
 
+For a live MongoDB Atlas database, use this format in your private `server/.env`:
+
+```env
+MONGO_URI=mongodb+srv://<username>:<password>@<cluster-host>/pulsechat?retryWrites=true&w=majority
+```
+
+> [!IMPORTANT]
+> Never commit a real database username or password. PulseChat ignores `server/.env`; only the safe `.env.example` template is published.
+
 Start the client and server together:
 
 ```bash
